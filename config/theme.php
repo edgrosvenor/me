@@ -1,13 +1,14 @@
 <?php
 
 return [
-    'color' => 'red',
+    'color' => collect(['gray', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'indigo', 'purple', 'pink'])->random(),
     'social' => [
-        'facebook' => 'edgrosvenor',
+        'facebook' => '',
         'github' => 'edgrosvenor',
-        'instagram' => 'edgrosvenor',
+        'instagram' => '',
         'twitter' => 'MaybeEdward',
     ],
     'footer' => 'simple_social',
     'layout' => 'droopy',
+    'copyright' => 'Ed Grosvenor',
 ];
