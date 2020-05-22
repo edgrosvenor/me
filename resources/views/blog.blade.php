@@ -101,7 +101,7 @@
                             <div class="text-xl font-medium text-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-600">
                                 {{ $article['title'] }}
                             </div>
-                            <div class="ml-2 flex-shrink-0 flex">
+                            <div class="hidden md:block ml-2 flex-shrink-0 flex">
                                 @foreach ($article['tags'] ?? [] as $tag)
                                     <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium leading-4 bg-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-100 text-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-800 mr-2 mt-2">
                                         {{ $tag }}

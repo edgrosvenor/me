@@ -12,7 +12,7 @@
                             </h3>
 
                         </div>
-                        <div class="ml-4 mt-2 flex-wrap">
+                        <div class="ml-4 mt-2 flex-wrap hidden md:block">
                             @foreach ($fm['tags'] ?? [] as $tag)
                                 <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-100 text-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-800 mb-2">
                                     {{ $tag }}
