@@ -12,7 +12,7 @@
                 </h2>
             </div>
             <div class="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
-                <a href="http://me.test/blog/05-2020-parsing-markdown-with-code-highlighting.md" class="block">
+                <a href="/blog/05-2020-parsing-markdown-with-code-highlighting.md" class="block">
                     <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
                     <div class="flex-shrink-0">
                         <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="" />
@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 </a>
-                <a href="http://me.test/blog/05-2020-parsing-markdown-with-code-highlighting.md" class="block">
+                <a href="/blog/05-2020-parsing-markdown-with-code-highlighting.md" class="block">
                     <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
                         <div class="flex-shrink-0">
                             <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="" />
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="http://me.test/blog/05-2020-parsing-markdown-with-code-highlighting.md" class="block">
+                <a href="/blog/05-2020-parsing-markdown-with-code-highlighting.md" class="block">
                     <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
                         <div class="flex-shrink-0">
                             <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="" />
