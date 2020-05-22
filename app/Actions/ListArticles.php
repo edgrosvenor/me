@@ -2,6 +2,7 @@
 
 namespace App\Actions;
 
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -14,7 +15,7 @@ class ListArticles
 
     }
 
-    public function execute(bool $published = true)
+    public function execute(bool $published = true): Collection
     {
         $results = collect([]);
         $files = scandir(resource_path('blog'));

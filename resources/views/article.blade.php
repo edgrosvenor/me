@@ -1,7 +1,4 @@
 @extends('layouts.app')
-@section('head')
-
-@endsection
 
 @section('content')
     <div class="relative bg-white overflow-hidden">
@@ -17,7 +14,7 @@
                         </div>
                         <div class="ml-4 mt-2 flex-wrap">
                             @foreach ($fm['tags'] ?? [] as $tag)
-                                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-{{ config('theme.color', 'gray') }}-100 text-{{ config('theme.color', 'gray') }}-800 mb-2">
+                                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-100 text-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-800 mb-2">
                                     {{ $tag }}
                                 </span>
                             @endforeach
@@ -32,6 +29,21 @@
                     <div class="markdown-body my-6">
                         {{ $content }}
                     </div>
+                    <a href="https://github.com/edgrosvenor/me/tree/master/resources/blog/{{$fm['file']}}" target="_blank">
+                        <div class="rounded-md bg-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-50 p-4">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="ml-3 flex-1 md:flex md:justify-between">
+                                    <p class="text-sm leading-5 text-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-700">
+                                        Did you find a mistake? Have something to add? This article is on GitHub. Send me a PR!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
             </div>
         </div>
     </div>

@@ -18,7 +18,7 @@ class ActionListArticlesTest extends TestCase
         $this->assertStringContainsString('05-2020-parsing-markdown-with-code-highlighting.md', $published->toJson());
         $this->assertStringNotContainsString('05-2020-this-article-will-never-get-published.md"', $published->toJson());
 
-        dd($published);
+
     }
 
     /** @test */

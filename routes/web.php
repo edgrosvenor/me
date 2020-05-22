@@ -20,6 +20,7 @@ Route::get('/open-source', \App\Http\Controllers\OpenSource::class)->name('open-
 Route::get('/blog', [\App\Http\Controllers\Blog::class, 'index'])->name('blog');
 Route::get('/blog/{article}', [\App\Http\Controllers\Blog::class, 'article'])->name('article');
 Route::get('/rss', [\App\Http\Controllers\Blog::class, 'rss'])->name('rss');
+Route::get('/demo/{demo}', \App\Http\Controllers\Demo::class);
 
 
 Route::get('/home', \App\Http\Controllers\Home::class)->middleware('auth')->name('home');

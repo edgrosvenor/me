@@ -12,7 +12,7 @@ class Blog
 
     public function index()
     {
-        return view('blog');
+        return view('blog', ['articles' => (new ListArticles())->execute()->sortByDesc('published_at')]);
     }
 
     public function article(string $article)
@@ -34,13 +34,4 @@ class Blog
 
     }
 
-    public function published()
-    {
-
-    }
-
-    public function pending()
-    {
-
-    }
 }

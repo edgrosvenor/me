@@ -16,7 +16,7 @@
                         <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                             Welcome To My
                             <br class="xl:hidden"/>
-                            <span class="text-{{ config('theme.color', 'gray') }}-600">Playground</span>
+                            <span class="text-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-600">Playground</span>
                         </h2>
                         <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                             This site is just a big collection of experiments and ideas. Some of them turn into
@@ -42,29 +42,13 @@
         </div>
     </div>
 
-    <div class="py-12 bg-white">
-        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex-row text-center">
 
-            @foreach ($colors as $color)
-            <span class="flex-1 rounded-md shadow-sm">
-                <a href="/?color={{ $color }}" type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-{{ $color }}-600 hover:bg-{{ $color }}-500 focus:outline-none focus:border-{{ $color }}-700 focus:shadow-outline-{{ $color }} active:bg-{{ $color }}-700 transition ease-in-out duration-150">
-                    {{ ucfirst($color) }} Mode
-                </a>
-            </span>
-            @endforeach
-            <span class="inline-flex rounded-md shadow-sm">
-                <a href="/" type="button" class="inline-flex items-center px-3 py-2 border border-gray-300 text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150">
-                    Random Mode
-                </a>
-            </span>
-        </div>
-    </div>
 
 
     <div class="py-12 bg-white">
         <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:text-center">
-                <p class="text-base leading-6 text-{{ config('theme.color', 'gray') }}-600 font-semibold tracking-wide uppercase">
+                <p class="text-base leading-6 text-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-600 font-semibold tracking-wide uppercase">
                     Running On The Tall Stack</p>
                 <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
                     Super Fast Development Gets to Failure Faster
@@ -82,7 +66,7 @@
                         <div class="flex">
                             <div class="flex-shrink-0">
                                 <div
-                                    class="flex items-center justify-center h-12 w-12 rounded-md border-2 border-{{ config('theme.color', 'gray') }}-500 text-white">
+                                    class="flex items-center justify-center h-12 w-12 rounded-md border-2 border-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-500 text-white">
                                     <svg viewBox="0 0 256 154" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                          xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                                         <defs>
@@ -113,7 +97,7 @@
                         <div class="flex">
                             <div class="flex-shrink-0">
                                 <div
-                                    class="flex items-center justify-center h-12 w-12 rounded-md border-2 border-{{ config('theme.color', 'gray') }}-500 text-white">
+                                    class="flex items-center justify-center h-12 w-12 rounded-md border-2 border-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-500 text-white">
                                     <i class="fa fa-wine-glass-alt fa-2x text-gray-700"></i>
                                 </div>
                             </div>
@@ -130,7 +114,7 @@
                         <div class="flex">
                             <div class="flex-shrink-0">
                                 <div
-                                    class="flex items-center justify-center h-12 w-12 rounded-md border-2 border-{{ config('theme.color', 'gray') }}-500 text-gray-900">
+                                    class="flex items-center justify-center h-12 w-12 rounded-md border-2 border-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-500 text-gray-900">
                                     <i class="fab fa-2x fa-laravel"></i>
                                 </div>
                             </div>
@@ -147,7 +131,7 @@
                         <div class="flex">
                             <div class="flex-shrink-0">
                                 <div
-                                    class="flex items-center justify-center h-12 w-12 rounded-md border-2 border-{{ config('theme.color', 'gray') }}-500 text-gray-800">
+                                    class="flex items-center justify-center h-12 w-12 rounded-md border-2 border-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-500 text-gray-800">
                                     <i class="fa fa-2x fa-spinner fa-spin"></i>
                                 </div>
                             </div>
@@ -195,7 +179,7 @@
                                 <div class="ml-4 lg:ml-0">
                                     <div class="text-base leading-6 font-medium text-gray-900">Milo Grosvenor</div>
                                     <div
-                                        class="text-base leading-6 font-medium text-{{ config('theme.color', 'gray') }}-600">
+                                        class="text-base leading-6 font-medium text-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-600">
                                         My Kid
                                     </div>
                                 </div>

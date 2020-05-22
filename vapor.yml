@@ -1,0 +1,14 @@
+id: 10228
+name: me
+environments:
+    production:
+        domain: edgrosvenor.me
+        warm: 12
+        memory: 1024
+        cli-memory: 512
+        runtime: php-7.4
+        concurrency: 12
+        build:
+            - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
+            - 'php artisan event:cache'
+            - 'npm ci && npm run prod && rm -rf node_modules'

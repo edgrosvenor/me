@@ -14,9 +14,15 @@ class User extends Authenticatable
 
     protected $rows = [
         [
+            'id' => 1,
             'name' => 'Ed Grosvenor',
             'email' => 'ed@gros.co',
         ],
+        [
+            'id' => 2,
+            'name' => 'Demo User',
+            'email' => 'demo@gros.co',
+        ]
     ];
 
     public function getRedirectUrlAttribute(): string

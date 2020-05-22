@@ -25,7 +25,7 @@
     <link rel="alternate" href="{{ route('rss') }}" title="Ed Grosvenor's Blog" type="application/rss+xml" />
     @yield('head')
 </head>
-<body class="bg-{{ config('theme.color', 'gray') }}-100 h-screen antialiased leading-none">
+<body class="bg-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-100 h-screen antialiased leading-none">
 
 
 

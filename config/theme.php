@@ -1,7 +1,8 @@
 <?php
 
 return [
-    'color' => collect(['gray', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'indigo', 'purple', 'pink'])->random(),
+    'colors' => ['gray', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'indigo', 'purple', 'pink'],
+    'color' => 'indigo',
     'social' => [
         'facebook' => '',
         'github' => 'edgrosvenor',

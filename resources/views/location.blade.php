@@ -1,13 +1,13 @@
 @extends('layouts.app')
 @section('content')
 
-    <div class="relative bg-gray-50  pb-20 px-4 sm:px-6 lg:pb-28 lg:px-8">
+    <div class="relative bg-white  pb-20 px-4 sm:px-6 lg:pb-28 lg:px-8">
+        @include('partials.header_menu')
+        <div class="relative max-w-7xl mx-auto my-12">
 
-        <div class="relative max-w-7xl mx-auto">
-            @include('partials.header_menu')
             <div class="text-center">
                 <h2 class="text-3xl leading-9 tracking-tight font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
-                    Locations / Hours
+                    Locations / Office Hours
                 </h2>
             </div>
             <div class="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">

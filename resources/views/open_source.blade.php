@@ -1,18 +1,15 @@
 @extends('layouts.app')
 @section('content')
-    <div class="relative bg-gray-50  pb-20 px-4 sm:px-6 lg:pb-28 lg:px-8">
+    <div class="relative bg-white pb-20 px-4 sm:px-6 lg:pb-28 lg:px-8">
+        @include('partials.header_menu')
+        <div class="relative max-w-7xl mx-auto my-12">
 
-        <div class="relative max-w-7xl mx-auto">
-            @include('partials.header_menu')
-            <div class="text-center">
-                <h2 class="text-3xl leading-9 tracking-tight font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
-                    Open Source
-                </h2>
-                <p class="mt-3 text-base leading-6 text-gray-500">
-                    I maintain a small collection of PHP packages, mostly designed for Laravel.
-                </p>
-            </div>
             <div class="bg-white shadow overflow-hidden sm:rounded-md">
+                <div class="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
+                    <h3 class="text-lg leading-6 font-medium text-gray-900">
+                        My Open Source Offerings
+                    </h3>
+                </div>
                 <ul>
                     <li>
                         <a href="#" class="block hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
@@ -44,8 +41,10 @@
                                             The Story
                                         </div>
                                         <div class="flex items-center text-sm leading-5 text-gray-500">
-                                            <i class="fa fa-monkey mr-2"></i>
-                                            Demo
+                                            <a href="/demo/passwordless_login">
+                                                <i class="fa fa-monkey mr-2"></i>
+                                                Demo
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

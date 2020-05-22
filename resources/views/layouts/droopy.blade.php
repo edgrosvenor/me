@@ -7,6 +7,7 @@
                 <div class="rounded-lg min-h-96 p-6">
                     @yield('content')
                 </div>
+                <livewire:color-picker/>
             </div>
             <!-- /End replace -->
 
@@ -19,3 +20,4 @@
         </div>
     </main>
 </div>
+

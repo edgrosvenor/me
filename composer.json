@@ -19,6 +19,7 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
         "laravel/vapor-cli": "^1.6",
+        "laravel/vapor-core": "^2.7",
         "livewire/livewire": "^1.0",
         "spatie/yaml-front-matter": "^2.0"
     },
