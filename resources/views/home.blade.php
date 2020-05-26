@@ -4,10 +4,13 @@
         <div class="max-w-screen-xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
             <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
                 Congratulations! You're logged in!
-                <br />
-                There's nothing to actually do here.
             </h2>
+
+            <div class="mt-8">
+                <livewire:image-library/>
+            </div>
             <div class="mt-8 flex justify-center">
+
                 <div class="inline-flex rounded-md shadow">
                     <button onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();"

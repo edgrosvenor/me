@@ -13,6 +13,7 @@
         "fruitcake/laravel-cors": "^1.0",
         "fzaninotto/faker": "^1.9.1",
         "grosv/eloquent-sheets": "dev-master",
+        "grosv/laravel-cloudinary": "dev-master",
         "grosv/laravel-passwordless-login": "dev-master",
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.0",
@@ -20,6 +21,7 @@
         "laravel/ui": "^2.0",
         "laravel/vapor-cli": "^1.6",
         "laravel/vapor-core": "^2.7",
+        "league/flysystem-aws-s3-v3": "^1.0",
         "livewire/livewire": "^1.0",
         "spatie/yaml-front-matter": "^2.0"
     },
@@ -73,6 +75,10 @@
         },
         {
             "url": "../../../Packages/grosv/laravel-passwordless-login",
+            "type": "path"
+        },
+        {
+            "url": "../../../Packages/grosv/laravel-cloudinary",
             "type": "path"
         }
     ],

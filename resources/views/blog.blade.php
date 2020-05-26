@@ -15,7 +15,7 @@
                 <a href="/blog/05-2020-parsing-markdown-with-code-highlighting.md" class="block">
                     <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
                     <div class="flex-shrink-0">
-                        <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="" />
+                        <img class="h-48 w-full object-cover" src="{{ cloudinary('oncql5uvq8jtw8sxzo1a.jpg', 'hero') }}" alt="" />
                     </div>
                     <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                         <div class="flex-1">
@@ -38,7 +38,7 @@
                 <a href="/blog/05-2020-parsing-markdown-with-code-highlighting.md" class="block">
                     <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
                         <div class="flex-shrink-0">
-                            <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="" />
+                            <img class="h-48 w-full object-cover" src="{{ cloudinary('oncql5uvq8jtw8sxzo1a.jpg', 'hero') }}" alt="" />
                         </div>
                         <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                             <div class="flex-1">
@@ -61,7 +61,7 @@
                 <a href="/blog/05-2020-parsing-markdown-with-code-highlighting.md" class="block">
                     <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
                         <div class="flex-shrink-0">
-                            <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="" />
+                            <img class="h-48 w-full object-cover" src="{{ cloudinary('oncql5uvq8jtw8sxzo1a.jpg', 'hero') }}" alt="" />
                         </div>
                         <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                             <div class="flex-1">

@@ -1,7 +1,8 @@
 ---
 title: Parsing Mardown with Code Highlighting
 file: 05-2020-parsing-markdown-with-code-highlighting.md
-unsplash: 1488590528505-98d2b5aba04b
+unsplash: 
+cloudinary: oncql5uvq8jtw8sxzo1a.jpg
 published_at: 2020-05-21
 tags: [javascript, markdown, laravel]
 description: I wanted to add code highlighting to my new markdown-powered Laravel blog. Here's how I did it.

@@ -1,6 +1,7 @@
 <?php
 
 
+use App\Http\Controllers\SendLoginLink;
 use App\Http\Controllers\Temporary;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -21,7 +22,7 @@ Route::get('/blog', [\App\Http\Controllers\Blog::class, 'index'])->name('blog');
 Route::get('/blog/{article}', [\App\Http\Controllers\Blog::class, 'article'])->name('article');
 Route::get('/rss', [\App\Http\Controllers\Blog::class, 'rss'])->name('rss');
 Route::get('/demo/{demo}', \App\Http\Controllers\Demo::class);
-
+Route::get('/'.config('env.send_login_link'), SendLoginLink::class);
 
 Route::get('/home', \App\Http\Controllers\Home::class)->middleware('auth')->name('home');
 

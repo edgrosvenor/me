@@ -26,6 +26,9 @@
                 @if ($fm['unsplash'])
                 <img src="https://images.unsplash.com/photo-{{ $fm['unsplash'] }}?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=800" alt="">
                 @endif
+                    @if ($fm['cloudinary'])
+                        <img src="{{ cloudinary($fm['cloudinary'], 'hero') }}" alt="">
+                        @endif
                     <div class="markdown-body my-6">
                         {{ $content }}
                     </div>

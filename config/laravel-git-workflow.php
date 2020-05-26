@@ -13,6 +13,11 @@ return [
             'git' => 'https://github.com/grosv/stubby',
             'version' => 'dev-master',
         ],
+        'laravel-cloudinary' => [
+            'path' => env('LGW_REPOS_CLOUDINARY_PATH', '../../../Packages/grosv/laravel-cloudinary'),
+            'git' => 'https://github.com/grosv/cloudinary',
+            'version' => 'dev-master',
+        ],
         'laravel-git-workflow' => [
             'path' => env('LGW_REPOS_LGW_PATH', '../../../Packages/grosv/laravel-git-workflow'),
             'version' => '^1.0',
