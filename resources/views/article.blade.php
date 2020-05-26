@@ -1,5 +1,12 @@
 @extends('layouts.app')
-
+@section('head')
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@MaybeEdward">
+    <meta name="twitter:creator" content="@MaybeEdward">
+    <meta name="twitter:title" content="{{ $fm['title'] }}">
+    <meta name="twitter:description" content="{{ $fm['description'] }}">
+    <meta name="twitter:image" content="https://edgrosvenor-me-local.s3.amazonaws.com/twitter_cards/{{ $fm['file'] }}.jpg">
+@endsection
 @section('content')
     <div class="relative bg-white overflow-hidden">
         <div class="max-w-4xl mx-auto ">

@@ -8,6 +8,7 @@ environments:
         cli-memory: 512
         runtime: php-7.4
         concurrency: 12
+        database: personal-sites
         build:
             - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
             - 'php artisan event:cache'
