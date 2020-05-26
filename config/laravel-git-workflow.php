@@ -15,7 +15,7 @@ return [
         ],
         'laravel-cloudinary' => [
             'path' => env('LGW_REPOS_CLOUDINARY_PATH', '../../../Packages/grosv/laravel-cloudinary'),
-            'git' => 'https://github.com/grosv/cloudinary',
+            'git' => 'https://github.com/grosv/laravel-cloudinary',
             'version' => 'dev-master',
         ],
         'laravel-git-workflow' => [

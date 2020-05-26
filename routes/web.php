@@ -5,6 +5,7 @@ use App\Http\Controllers\SendLoginLink;
 use App\Http\Controllers\Temporary;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Spatie\Browsershot\Browsershot;
 
 /** @todo - Delete this entire group of routes before launch */
 Route::group(['prefix' => 'tmp'], function() {
@@ -23,6 +24,8 @@ Route::get('/blog/{article}', [\App\Http\Controllers\Blog::class, 'article'])->n
 Route::get('/rss', [\App\Http\Controllers\Blog::class, 'rss'])->name('rss');
 Route::get('/demo/{demo}', \App\Http\Controllers\Demo::class);
 Route::get('/'.config('env.send_login_link'), SendLoginLink::class);
+Route::get('/twitter_card/{article?}', \App\Http\Controllers\TwitterCard::class);
 
 Route::get('/home', \App\Http\Controllers\Home::class)->middleware('auth')->name('home');
+
 
