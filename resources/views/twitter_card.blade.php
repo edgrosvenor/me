@@ -44,7 +44,7 @@
             </nav>
         </div>
         <div class="text-center">
-            <img src="{{ cloudinary($fm['cloudinary'], 'hero') }}" alt="" class="w-full rounded-sm">
+            <img src="{{ cloudinary($fm['cloudinary'], 'raw') }}" alt="" class="w-full rounded-sm">
         </div>
 
     </div>

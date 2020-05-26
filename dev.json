@@ -63,12 +63,24 @@
     },
     "repositories": [
         {
-            "url": "https://github.com/grosv/stubby",
-            "type": "git"
+            "url": "../../../Packages/grosv/stubby",
+            "type": "path"
         },
         {
-            "url": "https://github.com/grosv/laravel-cloudinary",
-            "type": "git"
+            "url": "../../../Packages/grosv/laravel-cloudinary",
+            "type": "path"
+        },
+        {
+            "url": "../../../Packages/grosv/laravel-git-workflow",
+            "type": "path"
+        },
+        {
+            "url": "../../../Packages/grosv/eloquent-sheets",
+            "type": "path"
+        },
+        {
+            "url": "../../../Packages/grosv/laravel-passwordless-login",
+            "type": "path"
         }
     ],
     "minimum-stability": "dev",

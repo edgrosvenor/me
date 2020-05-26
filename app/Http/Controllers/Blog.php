@@ -27,7 +27,7 @@ class Blog
 
         abort_unless($md->matter('published_at') || config('app.env') !== 'production', 404);
 
-        if ($request->has('card')) {
+        if ($request->has('card') && config('app.env') === 'local') {
             (new CreateTwitterCard())->execute($request->url());
         }
 
