@@ -12,9 +12,9 @@
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "fzaninotto/faker": "^1.9.1",
-        "grosv/eloquent-sheets": "^1.2",
+        "grosv/eloquent-sheets": "dev-master",
         "grosv/laravel-cloudinary": "dev-master",
-        "grosv/laravel-passwordless-login": "^1.2",
+        "grosv/laravel-passwordless-login": "dev-master",
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
@@ -27,7 +27,7 @@
     },
     "require-dev": {
         "facade/ignition": "^2.0",
-        "grosv/laravel-git-workflow": "^1.0",
+        "grosv/laravel-git-workflow": "dev-master",
         "grosv/stubby": "dev-master",
         "mockery/mockery": "^1.3.1",
         "nunomaduro/collision": "^4.1",
@@ -62,12 +62,28 @@
     },
     "repositories": {
         "0": {
-            "type": "git",
-            "url": "https://github.com/grosv/stubby"
+            "type": "path",
+            "url": "../../../Packages/grosv/stubby"
         },
         "4": {
             "url": "https://github.com/grosv/cloudinary",
             "type": "git"
+        },
+        "5": {
+            "url": "../../../Packages/grosv/laravel-cloudinary",
+            "type": "path"
+        },
+        "6": {
+            "url": "../../../Packages/grosv/laravel-git-workflow",
+            "type": "path"
+        },
+        "7": {
+            "url": "../../../Packages/grosv/eloquent-sheets",
+            "type": "path"
+        },
+        "8": {
+            "url": "../../../Packages/grosv/laravel-passwordless-login",
+            "type": "path"
         }
     },
     "minimum-stability": "dev",
