@@ -17,4 +17,9 @@ class Demo
     {
         return view('demo.passwordless_login', ['link' => User::find(2)->createPasswordlessLoginLink()]);
     }
+
+    public function sundial()
+    {
+        return view('demo.sundial');
+    }
 }

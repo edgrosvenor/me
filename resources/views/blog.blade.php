@@ -58,24 +58,24 @@
                         </div>
                     </div>
                 </a>
-                <a href="/blog/05-2020-parsing-markdown-with-code-highlighting.md" class="block">
+                <a href="/blog/07-2020-parsing-natural-language-date-strings-in-php.md" class="block">
                     <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
                         <div class="flex-shrink-0">
-                            <img class="h-48 w-full object-cover" src="{{ cloudinary('oncql5uvq8jtw8sxzo1a.jpg', 'hero') }}" alt="" />
+                            <img class="h-48 w-full object-cover" src="{{ cloudinary('boris-misevic-am7MoACtjt8-unsplash_vil0tv.jpg', 'hero') }}" alt="" />
                         </div>
                         <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                             <div class="flex-1">
                                 <p class="text-sm leading-5 font-medium text-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-600">
 
-                                    Laravel
+                                    PHP
 
                                 </p>
 
                                 <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
-                                    Code Highlighting in Your Blog
+                                    Introducing Sundial
                                 </h3>
                                 <p class="mt-3 text-base leading-6 text-gray-500">
-                                    I set up my new markdown-powered Laravel blog and decided to add code highlighting. I was pleasantly surprised at how easy it was.
+                                    <strong>Another Package in a Day Creation!</strong><br> Try Sundial, my new natural language date / time string parser for PHP 7.4 and up.
                                 </p>
                             </div>
                         </div>
