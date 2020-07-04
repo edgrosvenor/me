@@ -18,7 +18,7 @@
                         <div class="flex items-center space-x-3">
 
                                 <h3 class="text-gray-900 text-sm leading-5 font-medium truncate">Sundial</h3>
-                                <span class="flex-shrink-0 inline-block px-2 py-0.5 text-teal-800 text-xs leading-4 font-medium bg-teal-100 rounded-full ml-12">PHP</span>
+                                <span class="flex-shrink-0 inline-block px-2 py-0.5 text-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-800 text-xs leading-4 font-medium bg-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-100 rounded-full ml-12">PHP</span>
 
                         </div>
                         </a>
@@ -47,7 +47,7 @@
                     <div class="flex-1 truncate">
                         <div class="flex items-center space-x-3">
                             <h3 class="text-gray-900 text-sm leading-5 font-medium truncate">Passwordless Login</h3>
-                            <span class="flex-shrink-0 inline-block px-2 py-0.5 text-teal-800 text-xs leading-4 font-medium bg-teal-100 rounded-full ml-12">Laravel</span>
+                            <span class="flex-shrink-0 inline-block px-2 py-0.5 text-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-800 text-xs leading-4 font-medium bg-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-100 rounded-full ml-12">Laravel</span>
                         </div>
                         <p class="mt-1 text-gray-500 text-sm leading-5 truncate">Signed route magic login for Laravel</p>
                     </div>
@@ -74,7 +74,7 @@
                     <div class="flex-1 truncate">
                         <div class="flex items-center space-x-3">
                             <h3 class="text-gray-900 text-sm leading-5 font-medium truncate">Eloquent Sheets</h3>
-                            <span class="flex-shrink-0 inline-block px-2 py-0.5 text-teal-800 text-xs leading-4 font-medium bg-teal-100 rounded-full ml-12">Laravel</span>
+                            <span class="flex-shrink-0 inline-block px-2 py-0.5 text-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-800 text-xs leading-4 font-medium bg-{{ session('theme_color', config('theme.colors')[substr(time(), -1)]) }}-100 rounded-full ml-12">Laravel</span>
                         </div>
                         <p class="mt-1 text-gray-500 text-sm leading-5 truncate">Use Google Sheets as a Data Source</p>
                     </div>
