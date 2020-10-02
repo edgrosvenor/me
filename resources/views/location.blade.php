@@ -18,16 +18,16 @@
                     <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                         <div class="flex-1">
                             <p class="text-sm leading-5 font-medium text-indigo-600">
-                                <a href="#" class="hover:underline">
+                                <a href="https://calendly.com/artisan-build/office-hours" class="hover:underline">
                                     Suburban Chicago, Illinois
                                 </a>
                             </p>
-                            <a href="#" class="block">
+                            <a href="https://calendly.com/artisan-build/office-hours" class="block">
                                 <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
-                                    Tuesday & Thursday 9pm to 11pm CDT
+                                    Closed For The Season
                                 </h3>
                                 <p class="mt-3 text-base leading-6 text-gray-500">
-                                    Office hours are currently limited to remote only. I'm happy to pair on a project, chat on Zoom, or provide feedback on a piece of work. Contact me via Telegram to schedule time.
+                                    I am in Cambridge until late November. The COVID outlook for Illinois does not look promising for in-person collaboration through 2020, so I'll be back to online only when I return.
                                 </p>
                             </a>
                         </div>
@@ -40,16 +40,16 @@
                     <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                         <div class="flex-1">
                             <p class="text-sm leading-5 font-medium text-indigo-600">
-                                <a href="#" class="hover:underline">
+                                <a href="https://calendly.com/artisan-build/office-hours" class="hover:underline">
                                     Cambridge, Massachusetts
                                 </a>
                             </p>
-                            <a href="#" class="block">
+                            <a href="https://calendly.com/artisan-build/office-hours" class="block">
                                 <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
-                                    Currently Closed Because of Germs <i class="fa fa-virus"></i>
+                                    Tuesdays and Thursdays
                                 </h3>
                                 <p class="mt-3 text-base leading-6 text-gray-500">
-                                    Based on the current COVID-19 outlook for both Illinois and Massachusetts, I do not expect to return to the Boston area until at least mid-July.
+                                    I am available for online collaboration on Tuesdays and Thursdays and, weather permitting, outdoor in-person collaboration in Cambridge or Boston through November 20, 2020.
                                 </p>
                             </a>
                         </div>
@@ -62,9 +62,9 @@
                     <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                         <div class="flex-1">
                             <p class="text-sm leading-5 font-medium text-indigo-600">
-                                <a href="#" class="hover:underline"> Pop Up Locations</a>
+                                <a href="https://calendly.com/artisan-build/office-hours" class="hover:underline"> Pop Up Locations</a>
                             </p>
-                            <a href="#" class="block">
+                            <a href="https://calendly.com/artisan-build/office-hours" class="block">
                                 <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
                                     None Currently Scheduled
                                 </h3>
@@ -111,16 +111,6 @@
                             <dd class="mt-2 md:mt-0 md:col-span-7">
                                 <p class="text-base leading-6 text-gray-500">
                                     It mostly doesn't. But before COVID-19 I held some of my office hours in person. Mentoring over coffee, iterating over a conference talk, etc. I hope to get back to that again when doing so becomes safe and feasible again.
-                                </p>
-                            </dd>
-                        </div>
-                        <div class="mt-8 border-t border-gray-200 pt-6 md:grid md:grid-cols-12 md:gap-8">
-                            <dt class="text-base leading-6 font-medium text-gray-900 md:col-span-5">
-                                Why such antisocial hours?
-                            </dt>
-                            <dd class="mt-2 md:mt-0 md:col-span-7">
-                                <p class="text-base leading-6 text-gray-500">
-                                    COVID-19 has caused major disruptions in everyone's lives. For me and my family, it's meant figuring out how to maintain two full-time jobs from home with a 4-year-old and a grumpy teenager. That's mostly meant me doing the bulk of my work over night and just being dad during the day.
                                 </p>
                             </dd>
                         </div>

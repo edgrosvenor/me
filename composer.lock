@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "efcde34b6c9a3a0cfa8535fb10140d24",
+    "content-hash": "147724bbb9cf78a1d17e69af87d0bc89",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1131,16 +1131,16 @@
         },
         {
             "name": "grosv/sundial",
-            "version": "0.2.0",
+            "version": "0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/grosv/sundial.git",
-                "reference": "a94f610058d6cbf9c6191affe4c62acb091c7fcb"
+                "reference": "bfb8900378a1e81ab412633aa3ad2996a259874c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/grosv/sundial/zipball/a94f610058d6cbf9c6191affe4c62acb091c7fcb",
-                "reference": "a94f610058d6cbf9c6191affe4c62acb091c7fcb",
+                "url": "https://api.github.com/repos/grosv/sundial/zipball/bfb8900378a1e81ab412633aa3ad2996a259874c",
+                "reference": "bfb8900378a1e81ab412633aa3ad2996a259874c",
                 "shasum": ""
             },
             "require": {
@@ -1179,7 +1179,7 @@
                 "php",
                 "time"
             ],
-            "time": "2020-07-03T17:24:54+00:00"
+            "time": "2020-07-05T02:51:47+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

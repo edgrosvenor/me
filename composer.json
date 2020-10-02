@@ -15,7 +15,7 @@
         "grosv/eloquent-sheets": "dev-master",
         "grosv/laravel-cloudinary": "dev-master",
         "grosv/laravel-passwordless-login": "dev-master",
-        "grosv/sundial": "^0.2.0",
+        "grosv/sundial": "^0.3.0",
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
