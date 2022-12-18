@@ -14,7 +14,7 @@
             </div>
             <div>
                 <a href="{{ $post->post_url }}">
-                    <p class="text-gray-800">{!! $post->body !!}</p>
+                    <p class="text-gray-800">{!! $post->body !!} @if ($post->extended) <button class="text-blue-500 underline">Read more...</button>@endif</p>
                     @if ($post->image)
                         <img alt="{{ $post->image_alt }}" src="{{ $post->image }}" class="w-full mt-4">
                     @endif
