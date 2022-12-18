@@ -1,4 +1,7 @@
 <x-layout>
+    <x-slot name="profile">
+        <x-profile-header :person="$person"/>
+    </x-slot>
     <div class="relative overflow-hidden bg-white py-16">
         <div class="relative px-4 sm:px-6 lg:px-8">
             <div class="mx-auto max-w-prose text-lg">

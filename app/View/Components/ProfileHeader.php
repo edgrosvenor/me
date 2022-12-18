@@ -5,7 +5,7 @@ namespace App\View\Components;
 use App\Models\Person;
 use Illuminate\View\Component;
 
-class HeaderButtons extends Component
+class ProfileHeader extends Component
 {
     /**
      * Create a new component instance.
@@ -14,6 +14,7 @@ class HeaderButtons extends Component
      */
     public function __construct(public Person $person)
     {
+        //
     }
 
     /**
@@ -23,6 +24,6 @@ class HeaderButtons extends Component
      */
     public function render()
     {
-        return view('components.header-buttons');
+        return view('components.profile-header');
     }
 }

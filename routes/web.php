@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\PersonController;
+use App\Http\Controllers\PostController;
+use App\Models\Person;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +17,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect(route('person', ['person' => Person::first()]));
 });
+
+Route::group(['prefix' => '{person:handle}'], function() {
+    Route::get('/', PersonController::class)->name('person');
+    Route::get('/status/{post:uuid}', PostController::class)->name('post');
+});
+
+
