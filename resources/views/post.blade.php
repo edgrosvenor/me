@@ -12,9 +12,6 @@
                     <a class="font-bold text-black"><a href="{{ route('person', ['person' => $person]) }}">{{ $person->name }}</a></span>
                         <span
                             class="text-gray-600 text-sm">{{ str($person->handle)->prepend('@') }} &middot; {{ $post->created_at->diffForHumans(null, true, true) }}</span>
-                        @if ($post->pinned)
-                            <span class="text-gray-600 float-right text-xs"><i class="fa-regular fa-map-pin"></i> Pinned Screed</span>
-                    @endif
                 </div>
                 <div>
 
