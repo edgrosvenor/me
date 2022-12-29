@@ -60,10 +60,10 @@
     </div>
 
     @foreach ($posts->where('pinned', true)->sortByDesc('created_at') as $post)
-        <x-post-component :post="$post" :person="$person"/>
+        <x-post-component :post="$post" :person="$post->person"/>
     @endforeach
     @foreach ($posts->where('pinned', false)->sortByDesc('created_at') as $post)
-        <x-post-component :post="$post" :person="$person"/>
+        <x-post-component :post="$post" :person="$post->person"/>
     @endforeach
 </div>
 
