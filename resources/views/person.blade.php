@@ -39,27 +39,30 @@
         <div class="block">
             <div class="border-b border-gray-200">
                 <nav class="-mb-px flex space-x-8 mx-4" aria-label="Tabs">
-                    <a href="#" class="flex-1 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300
+                    @php
+                        $active = 'flex-1 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300
                 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-center font-bold text-black border-b
-                border-blue-600">Screeds</a>
+                border-blue-600';
 
-                    <a href="#" class="flex-1 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300
-                whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-center">Replies</a>
+                    $inactive = 'flex-1 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300
+                whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-center';
+                    @endphp
+                    <a href="{{ route('person', ['person' => $person]) }}" class="{{ $filter === 'posts' ? $active : $inactive }}">Screeds</a>
 
-                    <a href="#" class="flex-1 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300
-                whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-center">Media</a>
+                    <a href="{{ route('person', ['person' => $person, 'filter' => 'replies']) }}" class="{{ $filter === 'replies' ? $active : $inactive }}">Replies</a>
 
-                    <a href="#" class="flex-1 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300
-                whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-center">Likes</a>
+                    <a href="{{ route('person', ['person' => $person, 'filter' => 'media']) }}" class="{{ $filter === 'media' ? $active : $inactive }}">Media</a>
+
+                    <a href="{{ route('person', ['person' => $person, 'filter' => 'likes']) }}" class="{{ $filter === 'likes' ? $active : $inactive }}">Likes</a>
                 </nav>
             </div>
         </div>
     </div>
 
-    @foreach ($person->posts->where('pinned', true)->sortByDesc('created_at') as $post)
+    @foreach ($posts->where('pinned', true)->sortByDesc('created_at') as $post)
         <x-post-component :post="$post" :person="$person"/>
     @endforeach
-    @foreach ($person->posts->where('pinned', false)->sortByDesc('created_at') as $post)
+    @foreach ($posts->where('pinned', false)->sortByDesc('created_at') as $post)
         <x-post-component :post="$post" :person="$person"/>
     @endforeach
 </div>

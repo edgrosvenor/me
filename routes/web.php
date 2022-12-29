@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\LikesController;
+use App\Http\Controllers\MediaController;
 use App\Http\Controllers\PersonController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\RepliesController;
 use App\Models\Person;
 use Illuminate\Support\Facades\Route;
 
@@ -21,7 +24,7 @@ Route::get('/', function () {
 });
 
 Route::group(['prefix' => '{person:handle}'], function() {
-    Route::get('/', PersonController::class)->name('person');
+    Route::get('/{filter?}', PersonController::class)->name('person');
     Route::get('/status/{post:uuid}', PostController::class)->name('post');
 });
 
