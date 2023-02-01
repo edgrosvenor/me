@@ -11,6 +11,8 @@
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
+        "revolution/laravel-mastodon-api": "^3.0",
+        "revolution/socialite-mastodon": "^1.4",
         "spatie/laravel-markdown": "^2.2"
     },
     "require-dev": {

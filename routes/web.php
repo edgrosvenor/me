@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\LikesController;
+use App\Http\Controllers\MastodonCallback;
+use App\Http\Controllers\MastodonLogin;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\PersonController;
 use App\Http\Controllers\PostController;
@@ -28,4 +30,6 @@ Route::group(['prefix' => '{person:handle}'], function() {
     Route::get('/status/{post:uuid}', PostController::class)->name('post');
 });
 
+Route::get('login', MastodonLogin::class);
+Route::get('callback', MastodonCallback::class);
 

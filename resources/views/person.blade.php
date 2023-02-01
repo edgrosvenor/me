@@ -59,6 +59,10 @@
         </div>
     </div>
 
+    @if ($filter === 'media')
+        <a data-flickr-embed="true" href="https://www.flickr.com/photos/197310882@N07/albums/72177720304889383" title="gros.co"><img src="https://live.staticflickr.com/65535/52599242295_038d683eb0.jpg" width="640" height="480" alt="gros.co"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    @endif
+
     @foreach ($posts->where('pinned', true)->sortByDesc('created_at') as $post)
         <x-post-component :post="$post" :person="$post->person"/>
     @endforeach
